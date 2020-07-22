@@ -1,0 +1,51 @@
+What are the main problems of modern NLP and NLU? 
+answer:
+Same word - different meaning, understands context 
+
+Which libraries would you pick to use for the following cases and why (all problems
+should be solved for the Russian)
+- Sentiment analysis
+answer:
+I think that  library dostoevsky is good for sentiment analysis for russian language, because this model was trained on RuSentiment dataset and achieves  a good results up to ~0.71 F1 score.
+- Multi-label classification
+answer:
+For this task i would pick Bert, it can be used for specific tasks, it is a multi-language model, and is based not on feedback, like recurrent neural networks, but on the so-called attention mechanism. When reading the text, the keywords that carry the greatest semantic load are involuntarily highlighted, which gives a good result
+- Dependency parsing
+answer:
+pymorphy2 is good choice for Dependency parsing, fast C/C++compiler, OpenCorpora dictionaries are used
+- POS-tagging
+answer:
+ TreeTagger,  thas the highest accuracy on POS tag than others libraries, also pymorphy2 is suitable for this task
+- NER
+answer:
+Natasha library for Russian language, this is not a research project, underlying technologies are built for production, it is constantly developing library
+ 
+How would you evaluate a classification model, which metrics would you use?
+I would use K-Fold Cross Validation for evaluating a ML model, i would probably use F1 score as a metric for the task 
+answer:
+Main pipeline for the text pre-processing.
+Remove special characters
+Remove specific elements
+Remove stop words
+Remove punctuation
+Normalization lower case words
+Tokenize 
+Stemming or Lemmatize the tokens
+
+Microservices or monoliths? Why.
+Microservices i think in a Microservice application it is not difficult to implement changes, deploying a microservices is  more complex, but no problem with reliability, has no  barrier to adopting new technologies
+
+Describe the hardest programming task you’ve been facing with. It’s not necessarily ML
+task, could be just a programming. Why this task was hard to accomplish? What was
+your solution for the task? Can you share a github project?
+Answer:Yes, the team and I took part in an ML competition, we had to develop a chatbot that collects data posts from vk groups, and we had to develop a model that could determine from the text whether this information is reliable, correct or not, the project was called fighting fake news. It was difficult to find out how to determine that the information was not reliable, there were not many words by which it could be determined. Our decision was to use comments under the post to analyze opinions, as well as read information about the user, it looked like this: if a person is interested in medicine, and a post about medicine, then in all probability his voice will be correct. The project is still under development, it is a complex project, I think we can implement it, it will take a lot of time and effort, we have received a lot of good feedback from experts in this area, it will be a successful project.
+
+Did you work with VCS? Which one?
+I haven't worked yet, but I want to understand and learn about this topic, I think it's important to know
+Did you work with Github Actions?
+Yes, I have a little experience, I used action publishing pm modules, email notifications
+How familiar are you with Docker and other orchestration tools?
+Yes, I have studied Docker technology, understand the basic concepts of Docker, used it as part of my training, and plan to deepen my knowledge in this area
+What is ed25519 and why is it concerning to be better than ecdsa?
+Do you have any experience in data mining?
+Yes
